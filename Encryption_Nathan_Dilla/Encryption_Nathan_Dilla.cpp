@@ -7,6 +7,8 @@ After the key is set, ask the user to enter words to be encrypted.
 Display each original word and encrypted word in tabular format.
 All text should be displayed in lowercase. 
 Hint:  Review the "Encryption Examples," for sample output and a copy of part of the ASCII table.
+
+Nathan Dilla 9/20
 */
 
 #include <iostream>
