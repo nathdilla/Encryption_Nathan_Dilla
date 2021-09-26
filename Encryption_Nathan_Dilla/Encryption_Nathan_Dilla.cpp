@@ -3,9 +3,9 @@
 
 /*
 Write a C++ program that will ask the user to enter the shift value.
-After the key is set, ask the user to enter words to be encrypted. 
+After the key is set, ask the user to enter words to be encrypted.
 Display each original word and encrypted word in tabular format.
-All text should be displayed in lowercase. 
+All text should be displayed in lowercase.
 Hint:  Review the "Encryption Examples," for sample output and a copy of part of the ASCII table.
 
 Nathan Dilla 9/20
@@ -22,7 +22,7 @@ int main()
 
     cout << "Enter a string." << endl;
     getline(cin, input);//sets string to user input
-    //cin >> input; 
+    //cin >> input;
     cout << "You entered: " << input << endl;
 
     cout << "Enter the shift key." << endl;
@@ -31,7 +31,7 @@ int main()
 
     shift = shift % 26; // makes sure it doesn't leave table bounds and only shifts between 1-26
 
-    for (int i = 0; i < size(input); i++)
+    for (int i = 0; i < input.size(); i++)
     {
         char character = input.at(i); // stores current character at index i
         if (isalpha(character))
@@ -54,6 +54,6 @@ int main()
     }
 
     cout << "Original String: " << input << endl;
-    cout << "Encrypted String: " << res;
+    cout << "Encrypted String: " << res << endl;
 
 }
